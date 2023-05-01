@@ -18,5 +18,31 @@ public class PrimeNo {
             if (arr[i]!=0)
             System.out.println(arr[i]);
         }
+        for (int i=0; i<arr.length; i++) {
+            if (arr[i]!=0) {
+                if ((arr[i] > 9) && (arr[i] < 99)) {
+                    int temp = arr[i];
+                    int rev = 0;
+                    while (temp > 0) {
+                        rev = rev * 10 + (temp % 10);
+                        temp = temp / 10;
+                    }
+                    if (arr[i] == rev)
+                        System.out.println(rev);
+                }
+                if (arr[i] > 99) {
+                    int temp = arr[i];
+                    int rev = 0;
+                    while (temp > 0) {
+                        rev = rev * 1000 + (temp % 1000);
+                        temp = temp / 1000;
+                    }
+                    if (arr[i] == rev)
+                        System.out.println(rev);
+
+                }
+            }
+        }
+
     }
 }
