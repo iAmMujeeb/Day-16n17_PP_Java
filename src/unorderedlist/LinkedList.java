@@ -20,7 +20,7 @@ public class LinkedList<T> {
 
     public void display() {
         Node<T> temp = head;
-        while ((temp != null)&&(temp.data!=null)) {
+        while ((temp != null) && (temp.data != null)) {
             System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
@@ -72,15 +72,15 @@ public class LinkedList<T> {
         Node<T> searchedNode = search(removeData);
         if (searchedNode != null) {
             Node<T> temp = searchedNode;
-            if (temp.next!= null) {
+            if (temp.next != null) {
                 searchedNode.data = temp.next.data;
                 searchedNode.next = temp.next.next;
                 return true;
-            }if(temp.next == null){
+            }
+            if (temp.next == null) {
                 searchedNode.data = null;
                 searchedNode.next = null;
             }
-
         }
         return false;
     }
