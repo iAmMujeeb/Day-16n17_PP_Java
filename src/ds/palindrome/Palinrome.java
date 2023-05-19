@@ -3,7 +3,7 @@ package ds.palindrome;
 public class Palinrome {
     public static void main(String[] args) {
         Queue<Character> palindrome = new Queue<>();
-        String str = "Toot", reverseStr = "";
+        String str = "toot", reverseStr = "";
         int strLength = str.length();
         for(int i=0; i<strLength; i++){
             palindrome.enQueue(str.charAt(i));
@@ -25,6 +25,5 @@ public class Palinrome {
         else {
             System.out.println(str + " is not a Palindrome String.");
         }
-
     }
 }

@@ -56,7 +56,6 @@ public class LinkedList<T> {
         return popData;
     }
 
-
     public Node<T> search(T searchData) {
         Node<T> temp = head;
         while (temp != null) {
